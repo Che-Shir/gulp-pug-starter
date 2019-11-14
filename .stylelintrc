@@ -29,7 +29,7 @@
                     "^&:empty",
                     "#{\\$[-a-z]+}__[-a-z]+",
                     "^\\*$"
-                ],
+                ]
             },
             {
                 "severity": "warning",
@@ -109,7 +109,7 @@
                     "border",
                     "border-*",
                     "padding",
-                    "padding-*",
+                    "padding-*"
                 ]
             },
             {
@@ -122,8 +122,8 @@
                     "transition",
                     "transition-*",
                     "animation",
-                    "animation-*",
-                ],
+                    "animation-*"
+                ]
             }
         ]],
         "color-hex-case": ["lower", {
@@ -147,7 +147,7 @@
             "message": "Две точки с запятой подряд не должны быть"
         }],
 
-        "font-family-name-quotes": ["always-where-recommended", {
+        "font-family-name-quotes": ["always-unless-keyword", {
             "message": "Название шрифта следует брать в кавычки"
         }],
         "font-family-no-duplicate-names": [true, {
@@ -158,7 +158,7 @@
         }],
         "font-weight-notation": ["numeric", {
             "message": "Необходимо указывать плотность шрифта цифрой",
-            ignore: ["relative"]
+            "ignore": ["relative"]
         }],
 
         "number-no-trailing-zeros": [true, {
@@ -229,7 +229,7 @@
 
         "value-keyword-case": ["lower", {
             "message": "Значения свойств следует писать строчными буквами",
-            "ignoreProperties": ["/font-/", ]
+            "ignoreProperties": ["/font-/"]
         }],
         "value-list-comma-space-after": ["always-single-line", {
             "message": "Необходим пробел в значениях после запятой"
